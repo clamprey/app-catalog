@@ -305,6 +305,8 @@
                 plugins.push({
                     ptype:'rallygridboardfiltering',
                     filterButtonConfig: {
+                        stateful: true,
+                        stateId: context.getScopedStateId('iteration-tracking-filter-button'),
                         modelNames: this.modelNames,
                         filterPanelConfig: {
                             quickFilterPanelConfig: {
